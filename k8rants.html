@@ -1,0 +1,400 @@
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home</title>
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/slick-theme.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Font Awesome v4.7.0 -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<!-- Header Section Start -->
+	<header class="header-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="header-logo">
+						<a href="index.html"><img src="images/browne-logo.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="header-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="it-rant.html">IT Rants</a></li>
+							<li><a href="cv.html">CV</a></li>
+							<li><a href="cv.resource.html">CS Resources</a></li>
+							<li><a href="management-rent.html">Management Rents</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="header-end">
+						<a href="contact-us.html">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header Section End -->
+
+
+	<!-- It Rents Banner Section Start -->
+	<section class="it-rent-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="banner-head-txt">
+						<h1>K8sRant</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- It Rents Banner Section End-->
+
+	<section class="krants_sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="krants_cont_main">
+						<h3>K8sRant</h3>
+						<p>My observations and frustrations with Kubernetes</p>
+						<h6>Last Modified: 07/01/2023 00:36:21 </h6>
+						<p>In the modern digital landscape, the need for a small organization to maintain a data
+							center
+							for providing an externally facing client experience is rapidly dwindling, if not
+							entirely
+							extinct. The age of exclusive ownership of computer hardware and resources is fading
+							away,
+							being largely replaced by third-party cloud services. The niche for maintaining
+							privately
+							owned hardware now belongs primarily to specialized organizations that require
+							specific
+							services that cannot be met by mainstream providers. For instance, extremely
+							competitive,
+							profitable, and proprietary trading firms that deal with sensitive data may find it
+							more
+							beneficial to have complete control over their own hardware, software and operating
+							environment.</p>
+						<p>A prime example of this shift towards third-party managed services is Netflix, a
+							company
+							known for its compute and data-intensive operations. As documented in their
+							technical
+							blog,
+							Netflix has extensively leveraged Amazon's Simple Storage Service (S3), a
+							third-party
+							cloud
+							service. This decision by such a large-scale, data-centric organization accentuates
+							a
+							growing trend: viewing computing resources in the same light as municipal services
+							like
+							water, electricity, or sewage.</p>
+						<p>In this new paradigm, an organization that wants to accomplish something merely needs
+							to
+							turn
+							to the cloud. Major providers such as Amazon Web Services, Microsoft Azure, and
+							Google
+							Cloud
+							Platform will handle the nitty-gritty of managing hardware, storage, and
+							connectivity.
+							They
+							do this more efficiently and economically than most in-house IT departments could,
+							primarily
+							due to their vast scale and specialization in this field</p>
+						<p>This transition to cloud services has brought down many barriers to entry that were
+							traditionally associated with the need for significant capital expenditure on IT
+							infrastructure. It allows businesses to focus more on their core competencies and
+							less
+							on
+							the operational burdens of IT management. hendrerit.</p>
+						<p>However, it does introduce a new set of challenges. One of the primary ones is the
+							efficient
+							management of applications deployed on these cloud platforms. As the number and
+							complexity
+							of cloud services increase, organizations often find it challenging to manage and
+							optimize
+							their use. This requires new skills and tools, such as those for cloud cost
+							management,
+							cloud security, and DevOps practices like continuous integration and continuous
+							delivery
+							(CI/CD).</p>
+						<p>Moreover, as data and services move to the cloud, issues around data sovereignty and
+							compliance with various regulatory standards will become a significant issue sooner
+							than
+							expected for many organizations. Therefore, while the cloud offers many benefits,
+							it's
+							critical for organizations to approach this transition with a well-informed strategy
+							that
+							considers these challenges.</p>
+						<h4>NOW FOR THE RANT</h4>
+						<p>Let's state some of the obvious painpoints (examples will follow)</p>
+						<p class="cont_dark">Complexity: Kubernetes has a steep learning curve, with a complex
+							architecture and a wide
+							range of concepts to understand. The more features you use, the more complexity you
+							introduce.</p>
+						<p class="cont_dark">Configuration : Kubernetes requires numerous configuration files
+							for
+							different services and resources. Creating and managing these files can be tedious
+							and
+							error-prone. I spent almost two years researching k8's related network flow barriers
+							and
+							couldn't create a easy solution.</p>
+						<p class="cont_dark">Networking: Kubernetes has its own networking model that can be
+							difficult
+							to set up and manage, especially in terms of load balancing, network policies, and
+							service
+							discovery. I'll provide details on this in a future rant.</p>
+						<p class="cont_dark">Storage : Persistent storage is a common challenge in Kubernetes,
+							especially when running stateful applications. Kubernetes supports many storage
+							systems,
+							but
+							integrating them can be complex. More to come.</p>
+						<p class="cont_dark">System Resources: While Kubernetes helps make better use of
+							resources,
+							it
+							can itself be resource-intensive. This can lead to issues in environments where
+							resources
+							are constrained.</p>
+						<p class="cont_dark">Security: Securing a Kubernetes cluster is complex. It involves
+							securing
+							the control plane, the worker nodes, the network, the containers themselves, and the
+							application code. Misconfigurations can lead to serious security risks.</p>
+						<p class="cont_dark">Monitoring and Logging: Built-in tools for monitoring and logging
+							may
+							not
+							provide the level of detail required for troubleshooting and performance tuning,
+							necessitating third-party solutions.</p>
+						<p class="cont_dark">Updates and upgrades: Updating Kubernetes and its associated
+							components
+							can
+							be a complex process, potentially leading to downtime or backwards compatibility
+							issues.
+						</p>
+						<p class="cont_dark">Multi-tenancy challenges: While Kubernetes supports multi-tenancy,
+							it
+							can
+							be difficult to securely isolate tenants, allocate resources fairly, and manage
+							separate
+							authentication and authorization policies. In a nutshell. Don't bother unless you
+							are a
+							maschoshist. </p>
+						<p class="cont_dark">Cost management: Especially in cloud-based deployments, you can
+							easily
+							have
+							signifcant cost overruns if your cloud compute resources are not closely managed and
+							monitored.</p>
+						<p class="cont_dark">Interoperability with existing systems: Integrating Kubernetes with
+							existing systems, databases, and legacy applications can be challenging and may
+							require
+							significant architectural changes.</p>
+						<p class="cont_dark">Talent: Kubernetes expertise is in high demand and there's a
+							shortage
+							of experienced
+							professionals, which can slow down implementation and increase costs.</p>
+						<ul>
+							<li>
+								<p>Although Kubernetes provides some significant hurdles to overcome, it is far
+									better
+									to deal with issues like:</p>
+							</li>
+							<li>
+								<p>Scalability</p>
+							</li>
+							<li>
+								<p>System heath and healing</p>
+							</li>
+							<li>
+								<p>Service discovery and load balancing </p>
+							</li>
+							<li>
+								<p>Automated deployments and roll backs</p>
+							</li>
+							<li>
+								<p>Horizontal scaling: provided your server has the needed capacity</p>
+							</li>
+							<li>
+								<p>Portabilty: Rolling your own environment requires signifcant dicipline to
+									ensure
+									system hygiene and homogeneity. Life is so much easier when you can create
+									an
+									identical enviornment with a configuration file.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="importnt_links_box">
+						<h2>Important links</h2>
+						<ul class="link-list">
+							<li><a href="https://cilium.io/">Cililum</a></li>
+							<li><a href="https://prometheus.io/">Prometheus</a></li>
+							<li><a href="https://helm.sh/">Helm</a></li>
+							<li><a href="https://etcd.io/">etcd</a></li>
+							<li><a href="https://coredns.io/">Core DNS</a></li>
+							<li><a href="https://fluxcd.io/flux/concepts/">Flux</a></li>
+						</ul>
+					</div>
+					<div class="refer_box">
+						<h2>References</h2>
+						<p>Some potentially useful papers</p>
+						<ul class="quote-list">
+							<li>C. Carrión, “Kubernetes Scheduling: Taxonomy, ongoing issues and challenges,”
+								ACM
+								Comput. Surv., p. 3539606, Jun. 2022, <a
+									href="https://www.x-mol.net/paper/article/1532429378001137664">doi:
+									10.1145/3539606</a>
+								"</li>
+							<li>J. Esposito, “2020 DZone Kubernetes Survey: Key Research Findings,” p. 19.
+								"</li>
+							<li>E. Truyen, D. V. Landuyt, D. Preuveneers, B. Lagaisse, and W. Joosen, “A
+								Comprehensive
+								Feature Comparison Study of Open-Source Container Orchestration Frameworks,”
+								Applied
+								Sciences, vol. 9, no. 5, p. 931, Mar. 2019,<a
+									href="https://www.mdpi.com/2076-3417/9/5/931"> doi: 10.3390/app9050931</a>.
+								"</li>
+							<li>J. Shah and D. Dubaria, “Building Modern Clouds: Using Docker, Kubernetes &amp;
+								Google
+								Cloud Platform,” in 2019 IEEE 9th Annual Computing and Communication Workshop
+								and
+								Conference (CCWC), Las Vegas, NV, USA: IEEE, Jan. 2019, pp. 0184–0189. <a
+									href="https://www.researchgate.net/publication/331853911_Building_Modern_Clouds_Using_Docker_Kubernetes_Google_Cloud_Platform">
+									doi: 10.1109/CCWC.2019.8666479</a>.
+								"</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+
+	<!-- Footer -->
+
+	<section class="footer-main" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 col-12-medium">
+					<!-- Links -->
+					<section class="footer-head">
+						<h2>My Favorites:&nbsp;</h2>
+						<div>
+							<div class="row">
+								<div class="col-3 col-12-small">
+									<ul class="link-list last-child">
+										<li><a href="https://www.englishcycles.com/">English Cycles</a></li>
+										<li><a href="https://landsharkbicycles.com/">Landshark Bicycles </a></li>
+										<li><a href="https://www.yamaguchibike.com/content/Index">Yamaguchi Bicycles</a>
+										</li>
+										<li><a href="https://www.rodbikes.com/">RE Cycles</a></li>
+										<li><a href="https://www.kreitler.com/">Kreitler Rollers</a></li>
+										<li><a href="https://www.mavicparts.com/">Rogue Mechanic Mavic Parts</a></li>
+										<li><a href="https://www.ironmikemusing.com/">Iron Mike Musing</a></li>
+										<li><a href="https://www.shapeways.com/shops/amag-designs">Shapeways</a></li>
+										<li><a href="https://standert.de/">Standert</a></li>
+									</ul>
+								</div>
+								<div class="col-3 col-12-small">
+									<ul class="link-list last-child">
+										<li><a href="https://www.corima.com/">Corima</a></li>
+										<li><a href="https://www.competitivecyclist.com/">Competitive Cyclist</a></li>
+										<li><a href="https://www.excelsports.com/">Excel Sports</a></li>
+										<li><a href="https://www.coloradocyclist.com/">Colorado Cyclist</a></li>
+										<li><a href="https://trutrainer.com/">TruTrainer</a></li>
+										<li><a href="https://www.brokencarbon.com/">brokencarbon</a></li>
+										<li><a href="https://www.cptcycling.co.uk/coachs-wko-charts.php">cptcycling wko
+												charts</a></li>
+										<li><a href="https://www.tobedetermined.cc/">To Be Determined CC</a></li>
+										<li><a href="https://www.myvelofit.com/"> My Velofit</a></li>
+										<li><a href="blog-detail.html">Blog Detail</a></li>
+									</ul>
+								</div>
+								<div class="col-3 col-12-small">
+									<ul class="link-list last-child">
+										<li><a href="https://worldclasscycles.com/">World Class Cycles</a></li>
+										<li><a href="https://www.racycles.com/">RACycles</a></li>
+										<li><a href="https://www.retul.com/">RETÜL</a></li>
+										<li><a href="https://www.probikekit.com/">Probikekit</a></li>
+										<li><a href="https://www.youtube.com/hashtag/insidecarbonbikes">Inside Carbon
+												Bikes</a></li>
+										<li><a href="https://www.bahlcycle.com/">Bahl Cycle</a></li>
+										<li><a
+												href="https://blog.fairwheelbikes.com/reviews-and-testing/road-bike-crank-testing/">Road
+												bike crank review</a></li>
+										<li><a href="https://www.starbike.com/en/">Starbike</a></li>
+										<li><a href="https://luescherteknik.com.au/">Luescher Teknik</a></li>
+									</ul>
+								</div>
+								<div class="col-3 col-12-small">
+									<ul class="link-list last-child">
+										<li><a href="https://www.bikeinn.com/">bikeinn</a></li>
+										<li><a href="https://www.bikeparts.com/">bikeparts</a></li>
+										<li><a href="https://us.brompton.com/">Brompton</a></li>
+										<li><a href="https://www.theproscloset.com/">The Pros Closet</a></li>
+										<li><a
+												href="https://www.youtube.com/channel/UCH9263dSaOHFe25dkyGAu3Q">Hambini</a>
+										</li>
+										<li><a href="https://pjammcycling.com/">Pjamm Cycling</a></li>
+										<li><a href="https://trainingwithdata.com/"> Training with data</a></li>
+										<li><a href="https://www.bellatisport.com/">Belatti Sport</a></li>
+										<li><a href="https://www.kwigglebike.com/en_US/">Kwiggle</a></li>
+										<li><a href="cycling.html">Cycling</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-4 col-12-medium imp-medium">
+
+					<!-- Blurb -->
+					<section class="footer-head">
+						<h2>Cycling can be expensive...</h2>
+						<p> but it does not have to be. Judicious shopping can make this sport affordable. </p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slick.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+<script src="js/app.js"></script>
+
+
+</html>
